@@ -1,0 +1,97 @@
+hr.dashed {
+	border-top: 1px dashed;
+	border-bottom: none;
+}
+
+hr.dotted {
+	border-top: 6px dotted;
+	color: #ffffff;
+	border-bottom: none;
+}
+
+img.border {
+	display: block;
+	border-style: outset;
+	border-color: #e6e6ff;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+body {
+	background: linear-gradient(132deg, rgb(65, 80, 95) 0%, rgb(36, 37, 38) 100%);
+}
+
+main.inline_columns {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+div {
+	float: left;
+	width: 23%;
+	padding: 0 10px;
+}
+
+div.inset_a {
+	background: linear-gradient(
+		132deg,
+		rgb(251, 251, 255) 0%,
+		rgb(215, 223, 252) 100%
+	);
+	width: auto;
+	border: 6px inset #ccccff;
+	padding: 15px;
+	margin: 15px;
+	text-align: center;
+	height: 300px;
+}
+
+div.inset_b {
+	background: linear-gradient(
+		244deg,
+		rgb(251, 251, 255) 0%,
+		rgb(215, 223, 252) 100%
+	);
+	width: auto;
+	border: 6px double #ccccff;
+	padding: 15px;
+	margin: 15px;
+	text-align: center;
+	height: 300px;
+}
+
+div.inset_c {
+	background: linear-gradient(
+		343deg,
+		rgb(251, 251, 255) 0%,
+		rgb(215, 223, 252) 100%
+	);
+	width: 300px;
+	border: 6px groove #ccccff;
+	padding: 15px;
+	margin: 15px;
+	text-align: center;
+	height: 300px;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	gap: 10px;
+	padding: 10px;
+}
+
+.grid-container > div {
+	background: linear-gradient(
+		132deg,
+		rgb(255, 206, 236) 0%,
+		rgb(151, 150, 240) 100%
+	);
+	width: 300px;
+	border: 3px inset #ccccff;
+	padding: 15px;
+	margin: 15px;
+	text-align: center;
+	height: 150px;
+}
