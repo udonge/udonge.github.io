@@ -27,7 +27,8 @@ function formSubmission() {
                 alert("Valid");
             } else {
                 alert("Invalid.");
-            }                 
+            }
+            break;                 
         }
         case "4": {
             if(validateName(formID, "first_3") && validateName(formID,"first_44") && validateName(formID,"first_55") && validateName(formID,"first_63")) {
