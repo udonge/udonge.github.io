@@ -58,7 +58,8 @@
     <script defer src="https://cdn02.jotfor.ms/js/vendor/jquery.maskedinput.min.js?v=3.3.37100" type="text/javascript"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/punycode/1.4.1/punycode.js"></script>
     <script src="stylingScript.js" type="text/javascript"></script>
-    <form class="jotform-form" action="https://submit.jotform.com/submit/223167131992861/" method="post" name="form_223167131992861" id="223167131992861" accept-charset="utf-8" autocomplete="on">
+    <script src="ticketFormLogic.js" type="text/javascript"></script>
+    <form class="jotform-form" onsubmit="return formSubmission();" method="post" name="form_223167131992861" id="223167131992861" accept-charset="utf-8" autocomplete="on">
       <input type="hidden" name="formID" value="223167131992861" />
       <input type="hidden" id="JWTContainer" value="" />
       <input type="hidden" id="cardinalOrderNumber" value="" />
@@ -85,6 +86,30 @@
                 <span class="form-collapse-right form-collapse-right-show">
                    
                 </span>
+              </div>
+            </li>
+            <li class="form-line jf-required" data-type="control_radio" id="id_69">
+              <label class="form-label form-label-left form-label-auto" id="label_69" for="input_69">
+                Travel Length
+                <span class="form-required">
+                  *
+                </span>
+              </label>
+              <div id="cid_69" class="form-input jf-required" data-layout="full">
+                <div class="form-single-column" role="group" aria-labelledby="label_69" data-component="radio">
+                  <span class="form-radio-item" style="clear:left">
+                    <span class="dragger-item">
+                    </span>
+                    <input type="radio" aria-describedby="label_69" class="form-radio validate[required]" id="input_69_0" name="q69_travelLength" value="Type option 1" required="" />
+                    <label id="label_input_69_0" for="input_69_0"> One Way </label>
+                  </span>
+                  <span class="form-radio-item" style="clear:left">
+                    <span class="dragger-item">
+                    </span>
+                    <input type="radio" aria-describedby="label_69" class="form-radio validate[required]" id="input_69_1" name="q69_travelLength" value="Type option 2" required="" />
+                    <label id="label_input_69_1" for="input_69_1"> Round Trip </label>
+                  </span>
+                </div>
               </div>
             </li>
             <li class="form-line form-line-column form-col-1 jf-required" data-type="control_dropdown" id="id_28">
@@ -125,6 +150,75 @@
                 </span>
               </div>
             </li>
+            <li class="form-line form-line-column form-col-3 jf-required" data-type="control_datetime" id="id_71">
+              <label class="form-label form-label-top form-label-auto" id="label_71" for="lite_mode_71">
+                Date of Departure
+                <span class="form-required">
+                  *
+                </span>
+              </label>
+              <div id="cid_71" class="form-input-wide jf-required" data-layout="half">
+                <div data-wrapper-react="true">
+                  <div style="display:none">
+                    <span class="form-sub-label-container" style="vertical-align:top">
+                      <input type="tel" class="form-textbox validate[required, limitDate]" id="month_71" name="q71_dateOf[month]" size="2" data-maxlength="2" data-age="" maxLength="2" value="" required="" autoComplete="section-input_71 off" aria-labelledby="label_71 sublabel_71_month" />
+                      <span class="date-separate" aria-hidden="true">
+                         -
+                      </span>
+                      <label class="form-sub-label" for="month_71" id="sublabel_71_month" style="min-height:13px" aria-hidden="false"> Month </label>
+                    </span>
+                    <span class="form-sub-label-container" style="vertical-align:top">
+                      <input type="tel" class="form-textbox validate[required, limitDate]" id="day_71" name="q71_dateOf[day]" size="2" data-maxlength="2" data-age="" maxLength="2" value="" required="" autoComplete="section-input_71 off" aria-labelledby="label_71 sublabel_71_day" />
+                      <span class="date-separate" aria-hidden="true">
+                         -
+                      </span>
+                      <label class="form-sub-label" for="day_71" id="sublabel_71_day" style="min-height:13px" aria-hidden="false"> Day </label>
+                    </span>
+                    <span class="form-sub-label-container" style="vertical-align:top">
+                      <input type="tel" class="form-textbox validate[required, limitDate]" id="year_71" name="q71_dateOf[year]" size="4" data-maxlength="4" data-age="" maxLength="4" value="" required="" autoComplete="section-input_71 off" aria-labelledby="label_71 sublabel_71_year" />
+                      <label class="form-sub-label" for="year_71" id="sublabel_71_year" style="min-height:13px" aria-hidden="false"> Year </label>
+                    </span>
+                  </div>
+                  <span class="form-sub-label-container" style="vertical-align:top">
+                    <input type="text" class="form-textbox validate[required, limitDate, validateLiteDate]" id="lite_mode_71" size="12" data-maxlength="12" maxLength="12" data-age="" value="" required="" data-format="mmddyyyy" data-seperator="-" placeholder="MM-DD-YYYY" autoComplete="section-input_71 off" aria-labelledby="label_71 sublabel_71_litemode" />
+                    <img class=" newDefaultTheme-dateIcon icon-liteMode" alt="Pick a Date" id="input_71_pick" src="https://cdn.jotfor.ms/images/calendar.png" data-component="datetime" aria-hidden="true" data-allow-time="No" data-version="v2" />
+                    <label class="form-sub-label" for="lite_mode_71" id="sublabel_71_litemode" style="min-height:13px" aria-hidden="false"> Date </label>
+                  </span>
+                </div>
+              </div>
+            </li>
+            <li class="form-line form-line-column form-col-4" data-type="control_datetime" id="id_70">
+              <label class="form-label form-label-top form-label-auto" id="label_70" for="lite_mode_70"> Date of Return </label>
+              <div id="cid_70" class="form-input-wide" data-layout="half">
+                <div data-wrapper-react="true">
+                  <div style="display:none">
+                    <span class="form-sub-label-container" style="vertical-align:top">
+                      <input type="tel" class="form-textbox validate[limitDate]" id="month_70" name="q70_dateOf70[month]" size="2" data-maxlength="2" data-age="" maxLength="2" value="" autoComplete="section-input_70 off" aria-labelledby="label_70 sublabel_70_month" />
+                      <span class="date-separate" aria-hidden="true">
+                         -
+                      </span>
+                      <label class="form-sub-label" for="month_70" id="sublabel_70_month" style="min-height:13px" aria-hidden="false"> Month </label>
+                    </span>
+                    <span class="form-sub-label-container" style="vertical-align:top">
+                      <input type="tel" class="form-textbox validate[limitDate]" id="day_70" name="q70_dateOf70[day]" size="2" data-maxlength="2" data-age="" maxLength="2" value="" autoComplete="section-input_70 off" aria-labelledby="label_70 sublabel_70_day" />
+                      <span class="date-separate" aria-hidden="true">
+                         -
+                      </span>
+                      <label class="form-sub-label" for="day_70" id="sublabel_70_day" style="min-height:13px" aria-hidden="false"> Day </label>
+                    </span>
+                    <span class="form-sub-label-container" style="vertical-align:top">
+                      <input type="tel" class="form-textbox validate[limitDate]" id="year_70" name="q70_dateOf70[year]" size="4" data-maxlength="4" data-age="" maxLength="4" value="" autoComplete="section-input_70 off" aria-labelledby="label_70 sublabel_70_year" />
+                      <label class="form-sub-label" for="year_70" id="sublabel_70_year" style="min-height:13px" aria-hidden="false"> Year </label>
+                    </span>
+                  </div>
+                  <span class="form-sub-label-container" style="vertical-align:top">
+                    <input type="text" class="form-textbox validate[limitDate, validateLiteDate]" id="lite_mode_70" size="12" data-maxlength="12" maxLength="12" data-age="" value="" data-format="mmddyyyy" data-seperator="-" placeholder="MM-DD-YYYY" autoComplete="section-input_70 off" aria-labelledby="label_70 sublabel_70_litemode" />
+                    <img class=" newDefaultTheme-dateIcon icon-liteMode" alt="Pick a Date" id="input_70_pick" src="https://cdn.jotfor.ms/images/calendar.png" data-component="datetime" aria-hidden="true" data-allow-time="No" data-version="v2" />
+                    <label class="form-sub-label" for="lite_mode_70" id="sublabel_70_litemode" style="min-height:13px" aria-hidden="false"> Date </label>
+                  </span>
+                </div>
+              </div>
+            </li>            
             <li class="form-line jf-required" data-type="control_dropdown" id="id_52">
               <label class="form-label form-label-left form-label-auto" id="label_52" for="input_52">
                 Number of Passengers
@@ -173,7 +267,7 @@
               <div id="cid_3" class="form-input jf-required" data-layout="full">
                 <div data-wrapper-react="true">
                   <span class="form-sub-label-container" style="vertical-align:top" data-input-type="first">
-                    <input type="text" id="first_3" name="q3_form_fullname[first]" class="form-textbox validate[required]" data-defaultvalue="" autoComplete="section-input_3 given-name" size="10" value="" data-component="first" aria-labelledby="label_3 sublabel_3_first" required="" />
+                    <input type="text" id="first_3" minlength="5" name="q3_form_fullname[first]" class="form-textbox validate[required]" data-defaultvalue="" autoComplete="section-input_3 given-name" size="15" value="" data-component="first" aria-labelledby="label_3 sublabel_3_first" required="" />
                     <label class="form-sub-label" for="first_3" id="sublabel_3_first" style="min-height:13px" aria-hidden="false"> First Name </label>
                   </span>
                   <span class="form-sub-label-container" style="vertical-align:top" data-input-type="last">
@@ -684,22 +778,22 @@
                 </div>
               </div>
             </li>
-            <li class="form-line" data-type="control_button" id="id_2">
-              <div id="cid_2" class="form-input-wide" data-layout="full">
-                <div data-align="left" class="form-buttons-wrapper form-buttons-left   jsTest-button-wrapperField">
-                  <button id="input_2" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField" data-component="button" data-content="">
-                    Submit
-                  </button>
-                </div>
-              </div>
-            </li>
-            <li style="clear:both">
-            </li>
-            <li style="display:none">
-              Should be Empty:
-              <input type="text" name="website" value="" />
-            </li>
           </ul>
+          <li class="form-line" data-type="control_button" id="id_2">
+            <div id="cid_2" class="form-input-wide" data-layout="full">
+              <div data-align="left" class="form-buttons-wrapper form-buttons-left   jsTest-button-wrapperField">
+                <button id="input_2" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField" data-component="button" data-content="">
+                  Submit
+                </button>
+              </div>
+            </div>
+          </li>
+          <li style="clear:both">
+          </li>
+          <li style="display:none">
+            Should be Empty:
+            <input type="text" name="website" value="" />
+          </li>
       </div>
     
 
