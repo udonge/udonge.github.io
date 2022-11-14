@@ -1,39 +1,61 @@
-        JotForm.newDefaultTheme = true;
-        JotForm.extendsNewTheme = false;
-        JotForm.singleProduct = false;
-        JotForm.newPaymentUIForNewCreatedForms = false;
-        JotForm.newPaymentUI = true;
-    
-       JotForm.setConditions([{"action":[{"id":"action_1668387478135","visibility":"ShowMultiple","isError":false,"fields":["43","54","62"]}],"id":"1668387494575","index":"0","link":"Any","priority":"0","terms":[{"id":"term_1668387478135","field":"52","operator":"equals","value":"4","isError":false}],"type":"field"},{"action":[{"id":"action_1668387430258","visibility":"HideMultiple","isError":false,"fields":["43","54","62"]}],"id":"1668387447791","index":"1","link":"Any","priority":"1","terms":[{"id":"term_1668387430258","field":"52","operator":"equals","value":"1","isError":false}],"type":"field"},{"action":[{"id":"action_1668387225480","visibility":"Show","isError":false,"field":"43"}],"id":"1668387284171","index":"2","link":"Any","priority":"2","terms":[{"id":"term_1668387225480","field":"52","operator":"equals","value":"2","isError":false}],"type":"field"},{"action":[{"id":"action_0_1668387423280","visibility":"ShowMultiple","isError":false,"fields":["43","54"]}],"id":"1668387306886","index":"3","link":"Any","priority":"3","terms":[{"id":"term_0_1668387423280","field":"52","operator":"equals","value":"3","isError":false}],"type":"field"}]);
-        JotForm.init(function(){
-        /*INIT-START*/
-          setTimeout(function() {
-              $('input_34').hint('e.g., 23');
-           }, 20);
-          JotForm.setPhoneMaskingValidator( 'input_5_full', '(###) ###-####' );
-          setTimeout(function() {
-              $('input_6').hint('ex: email@yahoo.com');
-           }, 20);
-          setTimeout(function() {
-              $('input_46').hint('e.g., 23');
-           }, 20);
-          JotForm.setPhoneMaskingValidator( 'input_47_full', '(###) ###-####' );
-          setTimeout(function() {
-              $('input_48').hint('ex: email@yahoo.com');
-           }, 20);
-          setTimeout(function() {
-              $('input_57').hint('e.g., 23');
-           }, 20);
-          JotForm.setPhoneMaskingValidator( 'input_58_full', '(###) ###-####' );
-          setTimeout(function() {
-              $('input_59').hint('ex: email@yahoo.com');
-           }, 20);
-          setTimeout(function() {
-              $('input_65').hint('e.g., 23');
-           }, 20);
-          JotForm.setPhoneMaskingValidator( 'input_66_full', '(###) ###-####' );
-          setTimeout(function() {
-              $('input_67').hint('ex: email@yahoo.com');
-           }, 20);
-        /*INIT-END*/
-        });
+JotForm.extendsNewTheme = false;
+	JotForm.singleProduct = false;
+	JotForm.newPaymentUIForNewCreatedForms = false;
+	JotForm.newPaymentUI = true;
+
+   JotForm.setConditions([{"action":[{"id":"action_1668407249191","visibility":"Show","isError":false,"field":"35"}],"id":"1668407257592","index":"0","link":"Any","priority":"0","terms":[{"id":"term_1668407249191","field":"52","operator":"equals","value":"1","isError":false}],"type":"field"},{"action":[{"id":"action_1668407104726","field":"70","visibility":"Require","isError":false}],"id":"1668407114096","index":"1","link":"Any","priority":"1","terms":[{"id":"term_1668407104726","field":"69","operator":"equals","value":"Round Trip","isError":false}],"type":"require"},{"action":[{"id":"action_1668407089904","visibility":"Show","isError":false,"field":"70"}],"id":"1668407101008","index":"2","link":"Any","priority":"2","terms":[{"id":"term_1668407089904","field":"69","operator":"equals","value":"Round Trip","isError":false}],"type":"field"},{"action":[{"id":"action_1668401373228","visibility":"RequireMultiple","fields":["44","45","46","47","48","55","56","57","58","59","63","64","65","66","67"],"isError":false}],"id":"1668401403601","index":"3","link":"Any","priority":"3","terms":[{"id":"term_1668401373228","field":"52","operator":"equals","value":"4","isError":false}],"type":"require"},{"action":[{"id":"action_1668401354690","visibility":"RequireMultiple","fields":["44","45","46","47","48","55","56","57","58","59"],"isError":false}],"id":"1668401369218","index":"4","link":"Any","priority":"4","terms":[{"id":"term_1668401354690","field":"52","operator":"equals","value":"3","isError":false}],"type":"require"},{"action":[{"id":"action_0_1668407020349","visibility":"RequireMultiple","fields":["44","45","46","47","48"],"isError":false}],"id":"1668401288078","index":"5","link":"Any","priority":"5","terms":[{"id":"term_0_1668407020349","field":"52","operator":"equals","value":"2","isError":false}],"type":"require"},{"action":[{"id":"action_1668401325998","visibility":"ShowMultiple","isError":false,"fields":["35","43","54","62"]}],"id":"1668401345111","index":"6","link":"Any","priority":"6","terms":[{"id":"term_1668401325998","field":"52","operator":"equals","value":"4","isError":false}],"type":"field"},{"action":[{"id":"action_0_1668407007601","visibility":"ShowMultiple","isError":false,"fields":["35","43","54"]}],"id":"1668401322753","index":"7","link":"Any","priority":"7","terms":[{"id":"term_0_1668407007601","field":"52","operator":"equals","value":"3","isError":false}],"type":"field"},{"action":[{"id":"action_0_1668407043443","visibility":"ShowMultiple","isError":false,"fields":["35","43"]}],"id":"1668401256389","index":"8","link":"Any","priority":"8","terms":[{"id":"term_0_1668407043443","field":"52","operator":"equals","value":"2","isError":false}],"type":"field"}]);	JotForm.clearFieldOnHide="disable";
+
+	JotForm.init(function(){
+	/*INIT-START*/
+
+ JotForm.calendarMonths = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+ JotForm.calendarDays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
+ JotForm.calendarOther = {"today":"Today"};
+ var languageOptions = document.querySelectorAll('#langList li'); 
+ for(var langIndex = 0; langIndex < languageOptions.length; langIndex++) { 
+   languageOptions[langIndex].on('click', function(e) { setTimeout(function(){ JotForm.setCalendar("71", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":true,"past":false,"custom":false,"ranges":false,"start":"","end":""}); }, 0); });
+ } 
+ JotForm.onTranslationsFetch(function() { JotForm.setCalendar("71", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":true,"past":false,"custom":false,"ranges":false,"start":"","end":""}); });
+
+ JotForm.calendarMonths = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+ JotForm.calendarDays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
+ JotForm.calendarOther = {"today":"Today"};
+ var languageOptions = document.querySelectorAll('#langList li'); 
+ for(var langIndex = 0; langIndex < languageOptions.length; langIndex++) { 
+   languageOptions[langIndex].on('click', function(e) { setTimeout(function(){ JotForm.setCalendar("70", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":true,"past":false,"custom":false,"ranges":false,"start":"","end":""}); }, 0); });
+ } 
+ JotForm.onTranslationsFetch(function() { JotForm.setCalendar("70", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":true,"past":false,"custom":false,"ranges":false,"start":"","end":""}); });
+      setTimeout(function() {
+          $('input_34').hint('e.g., 23');
+       }, 20);
+      JotForm.setPhoneMaskingValidator( 'input_5_full', '(###) ###-####' );
+      setTimeout(function() {
+          $('input_6').hint('ex: email@yahoo.com');
+       }, 20);
+      setTimeout(function() {
+          $('input_46').hint('e.g., 23');
+       }, 20);
+      JotForm.setPhoneMaskingValidator( 'input_47_full', '(###) ###-####' );
+      setTimeout(function() {
+          $('input_48').hint('ex: email@yahoo.com');
+       }, 20);
+      setTimeout(function() {
+          $('input_57').hint('e.g., 23');
+       }, 20);
+      JotForm.setPhoneMaskingValidator( 'input_58_full', '(###) ###-####' );
+      setTimeout(function() {
+          $('input_59').hint('ex: email@yahoo.com');
+       }, 20);
+      setTimeout(function() {
+          $('input_65').hint('e.g., 23');
+       }, 20);
+      JotForm.setPhoneMaskingValidator( 'input_66_full', '(###) ###-####' );
+      setTimeout(function() {
+          $('input_67').hint('ex: email@yahoo.com');
+       }, 20);
+	/*INIT-END*/
+	});
+
+   JotForm.prepareCalculationsOnTheFly([null,{"name":"clickTo","qid":"1","text":"Ticket Booking","type":"control_head"},{"name":"submit","qid":"2","text":"Submit","type":"control_button"},{"description":"","name":"form_fullname","qid":"3","text":"Full Name","type":"control_fullname"},{"description":"","name":"address4","qid":"4","text":"Address","type":"control_address"},{"description":"","name":"phoneNumber5","qid":"5","text":"Phone Number","type":"control_phone"},{"description":"","name":"email6","qid":"6","subLabel":"example@example.com","text":"E-mail","type":"control_email"},{"name":"clickTo7","qid":"7","text":"","type":"control_text"},null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"description":"","name":"origin","qid":"28","subLabel":"Please select where you will travel from.","text":"Origin","type":"control_dropdown"},{"description":"","name":"typeA29","qid":"29","subLabel":"Please select where you wish to go.","text":"Destination","type":"control_dropdown"},null,null,{"name":"divider32","qid":"32","text":"Divider","type":"control_divider"},{"description":"","name":"gender","qid":"33","text":"Gender","type":"control_radio"},{"description":"","name":"age","qid":"34","subLabel":"","text":"Age","type":"control_number"},{"name":"passenger1","qid":"35","text":"Passenger 1","type":"control_collapse"},null,{"name":"divider37","qid":"37","text":"Divider","type":"control_divider"},null,null,{"name":"travelDetails","qid":"40","text":"Travel Details","type":"control_collapse"},null,null,{"name":"passenger2","qid":"43","text":"Passenger 2","type":"control_collapse"},{"description":"","name":"fullName","qid":"44","text":"Full Name","type":"control_fullname"},{"description":"","name":"gender45","qid":"45","text":"Gender","type":"control_radio"},{"description":"","name":"age46","qid":"46","subLabel":"","text":"Age","type":"control_number"},{"description":"","name":"phoneNumber","qid":"47","text":"Phone Number","type":"control_phone"},{"description":"","name":"email","qid":"48","subLabel":"example@example.com","text":"E-mail","type":"control_email"},{"description":"","name":"address","qid":"49","text":"Address","type":"control_address"},null,null,{"description":"","name":"numberOf","qid":"52","subLabel":"Select number of passengers.","text":"Number of Passengers","type":"control_dropdown"},{"name":"divider","qid":"53","text":"Divider","type":"control_divider"},{"name":"passenger3","qid":"54","text":"Passenger 3","type":"control_collapse"},{"description":"","name":"fullName55","qid":"55","text":"Full Name","type":"control_fullname"},{"description":"","name":"gender56","qid":"56","text":"Gender","type":"control_radio"},{"description":"","name":"age57","qid":"57","subLabel":"","text":"Age","type":"control_number"},{"description":"","name":"phoneNumber58","qid":"58","text":"Phone Number","type":"control_phone"},{"description":"","name":"email59","qid":"59","subLabel":"example@example.com","text":"E-mail","type":"control_email"},{"description":"","name":"address60","qid":"60","text":"Address","type":"control_address"},{"name":"divider61","qid":"61","text":"Divider","type":"control_divider"},{"name":"passenger4","qid":"62","text":"Passenger 4","type":"control_collapse"},{"description":"","name":"fullName63","qid":"63","text":"Full Name","type":"control_fullname"},{"description":"","name":"gender64","qid":"64","text":"Gender","type":"control_radio"},{"description":"","name":"age65","qid":"65","subLabel":"","text":"Age","type":"control_number"},{"description":"","name":"phoneNumber66","qid":"66","text":"Phone Number","type":"control_phone"},{"description":"","name":"email67","qid":"67","subLabel":"example@example.com","text":"E-mail","type":"control_email"},{"description":"","name":"address68","qid":"68","text":"Address","type":"control_address"},{"description":"","name":"travelLength","qid":"69","text":"Travel Length","type":"control_radio"},{"description":"","name":"dateOf70","qid":"70","text":"Date of Return","type":"control_datetime"},{"description":"","name":"dateOf","qid":"71","text":"Date of Departure","type":"control_datetime"}]);
+   setTimeout(function() {
+JotForm.paymentExtrasOnTheFly([null,{"name":"clickTo","qid":"1","text":"Ticket Booking","type":"control_head"},{"name":"submit","qid":"2","text":"Submit","type":"control_button"},{"description":"","name":"form_fullname","qid":"3","text":"Full Name","type":"control_fullname"},{"description":"","name":"address4","qid":"4","text":"Address","type":"control_address"},{"description":"","name":"phoneNumber5","qid":"5","text":"Phone Number","type":"control_phone"},{"description":"","name":"email6","qid":"6","subLabel":"example@example.com","text":"E-mail","type":"control_email"},{"name":"clickTo7","qid":"7","text":"","type":"control_text"},null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"description":"","name":"origin","qid":"28","subLabel":"Please select where you will travel from.","text":"Origin","type":"control_dropdown"},{"description":"","name":"typeA29","qid":"29","subLabel":"Please select where you wish to go.","text":"Destination","type":"control_dropdown"},null,null,{"name":"divider32","qid":"32","text":"Divider","type":"control_divider"},{"description":"","name":"gender","qid":"33","text":"Gender","type":"control_radio"},{"description":"","name":"age","qid":"34","subLabel":"","text":"Age","type":"control_number"},{"name":"passenger1","qid":"35","text":"Passenger 1","type":"control_collapse"},null,{"name":"divider37","qid":"37","text":"Divider","type":"control_divider"},null,null,{"name":"travelDetails","qid":"40","text":"Travel Details","type":"control_collapse"},null,null,{"name":"passenger2","qid":"43","text":"Passenger 2","type":"control_collapse"},{"description":"","name":"fullName","qid":"44","text":"Full Name","type":"control_fullname"},{"description":"","name":"gender45","qid":"45","text":"Gender","type":"control_radio"},{"description":"","name":"age46","qid":"46","subLabel":"","text":"Age","type":"control_number"},{"description":"","name":"phoneNumber","qid":"47","text":"Phone Number","type":"control_phone"},{"description":"","name":"email","qid":"48","subLabel":"example@example.com","text":"E-mail","type":"control_email"},{"description":"","name":"address","qid":"49","text":"Address","type":"control_address"},null,null,{"description":"","name":"numberOf","qid":"52","subLabel":"Select number of passengers.","text":"Number of Passengers","type":"control_dropdown"},{"name":"divider","qid":"53","text":"Divider","type":"control_divider"},{"name":"passenger3","qid":"54","text":"Passenger 3","type":"control_collapse"},{"description":"","name":"fullName55","qid":"55","text":"Full Name","type":"control_fullname"},{"description":"","name":"gender56","qid":"56","text":"Gender","type":"control_radio"},{"description":"","name":"age57","qid":"57","subLabel":"","text":"Age","type":"control_number"},{"description":"","name":"phoneNumber58","qid":"58","text":"Phone Number","type":"control_phone"},{"description":"","name":"email59","qid":"59","subLabel":"example@example.com","text":"E-mail","type":"control_email"},{"description":"","name":"address60","qid":"60","text":"Address","type":"control_address"},{"name":"divider61","qid":"61","text":"Divider","type":"control_divider"},{"name":"passenger4","qid":"62","text":"Passenger 4","type":"control_collapse"},{"description":"","name":"fullName63","qid":"63","text":"Full Name","type":"control_fullname"},{"description":"","name":"gender64","qid":"64","text":"Gender","type":"control_radio"},{"description":"","name":"age65","qid":"65","subLabel":"","text":"Age","type":"control_number"},{"description":"","name":"phoneNumber66","qid":"66","text":"Phone Number","type":"control_phone"},{"description":"","name":"email67","qid":"67","subLabel":"example@example.com","text":"E-mail","type":"control_email"},{"description":"","name":"address68","qid":"68","text":"Address","type":"control_address"},{"description":"","name":"travelLength","qid":"69","text":"Travel Length","type":"control_radio"},{"description":"","name":"dateOf70","qid":"70","text":"Date of Return","type":"control_datetime"},{"description":"","name":"dateOf","qid":"71","text":"Date of Departure","type":"control_datetime"}]);}, 20); 

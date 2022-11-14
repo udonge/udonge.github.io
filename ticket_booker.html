@@ -59,7 +59,8 @@
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/punycode/1.4.1/punycode.js"></script>
     <script src="stylingScript.js" type="text/javascript"></script>
     <script src="ticketFormLogic.js" type="text/javascript"></script>
-    <form class="jotform-form" onsubmit="return formSubmission();" method="post" name="form_223167131992861" id="223167131992861" accept-charset="utf-8" autocomplete="on">
+    
+    <form class="jotform-form" action="https://submit.jotform.com/submit/223167131992861/" method="post" name="form_223167131992861" id="223167131992861" accept-charset="utf-8" autocomplete="on">
       <input type="hidden" name="formID" value="223167131992861" />
       <input type="hidden" id="JWTContainer" value="" />
       <input type="hidden" id="cardinalOrderNumber" value="" />
@@ -89,24 +90,24 @@
               </div>
             </li>
             <li class="form-line jf-required" data-type="control_radio" id="id_69">
-              <label class="form-label form-label-left form-label-auto" id="label_69" for="input_69">
+              <label class="form-label form-label-top form-label-auto" id="label_69" for="input_69">
                 Travel Length
                 <span class="form-required">
                   *
                 </span>
               </label>
-              <div id="cid_69" class="form-input jf-required" data-layout="full">
+              <div id="cid_69" class="form-input-wide jf-required" data-layout="full">
                 <div class="form-single-column" role="group" aria-labelledby="label_69" data-component="radio">
                   <span class="form-radio-item" style="clear:left">
                     <span class="dragger-item">
                     </span>
-                    <input type="radio" aria-describedby="label_69" class="form-radio validate[required]" id="input_69_0" name="q69_travelLength" value="Type option 1" required="" />
-                    <label id="label_input_69_0" for="input_69_0"> One Way </label>
+                    <input type="radio" aria-describedby="label_69" class="form-radio validate[required]" id="input_69_0" name="q69_travelLength" value="One-Way" required="" />
+                    <label id="label_input_69_0" for="input_69_0"> One-Way </label>
                   </span>
                   <span class="form-radio-item" style="clear:left">
                     <span class="dragger-item">
                     </span>
-                    <input type="radio" aria-describedby="label_69" class="form-radio validate[required]" id="input_69_1" name="q69_travelLength" value="Type option 2" required="" />
+                    <input type="radio" aria-describedby="label_69" class="form-radio validate[required]" id="input_69_1" name="q69_travelLength" value="Round Trip" required="" />
                     <label id="label_input_69_1" for="input_69_1"> Round Trip </label>
                   </span>
                 </div>
@@ -161,72 +162,72 @@
                 <div data-wrapper-react="true">
                   <div style="display:none">
                     <span class="form-sub-label-container" style="vertical-align:top">
-                      <input type="tel" class="form-textbox validate[required, limitDate]" id="month_71" name="q71_dateOf[month]" size="2" data-maxlength="2" data-age="" maxLength="2" value="" required="" autoComplete="section-input_71 off" aria-labelledby="label_71 sublabel_71_month" />
+                      <input type="tel" class="form-textbox validate[required, disallowPast, limitDate]" id="month_71" name="q71_dateOf[month]" size="2" data-maxlength="2" data-age="" maxLength="2" value="" required="" autoComplete="section-input_71 off" aria-labelledby="label_71 sublabel_71_month" />
                       <span class="date-separate" aria-hidden="true">
-                         -
+                         /
                       </span>
                       <label class="form-sub-label" for="month_71" id="sublabel_71_month" style="min-height:13px" aria-hidden="false"> Month </label>
                     </span>
                     <span class="form-sub-label-container" style="vertical-align:top">
-                      <input type="tel" class="form-textbox validate[required, limitDate]" id="day_71" name="q71_dateOf[day]" size="2" data-maxlength="2" data-age="" maxLength="2" value="" required="" autoComplete="section-input_71 off" aria-labelledby="label_71 sublabel_71_day" />
+                      <input type="tel" class="form-textbox validate[required, disallowPast, limitDate]" id="day_71" name="q71_dateOf[day]" size="2" data-maxlength="2" data-age="" maxLength="2" value="" required="" autoComplete="section-input_71 off" aria-labelledby="label_71 sublabel_71_day" />
                       <span class="date-separate" aria-hidden="true">
-                         -
+                         /
                       </span>
                       <label class="form-sub-label" for="day_71" id="sublabel_71_day" style="min-height:13px" aria-hidden="false"> Day </label>
                     </span>
                     <span class="form-sub-label-container" style="vertical-align:top">
-                      <input type="tel" class="form-textbox validate[required, limitDate]" id="year_71" name="q71_dateOf[year]" size="4" data-maxlength="4" data-age="" maxLength="4" value="" required="" autoComplete="section-input_71 off" aria-labelledby="label_71 sublabel_71_year" />
+                      <input type="tel" class="form-textbox validate[required, disallowPast, limitDate]" id="year_71" name="q71_dateOf[year]" size="4" data-maxlength="4" data-age="" maxLength="4" value="" required="" autoComplete="section-input_71 off" aria-labelledby="label_71 sublabel_71_year" />
                       <label class="form-sub-label" for="year_71" id="sublabel_71_year" style="min-height:13px" aria-hidden="false"> Year </label>
                     </span>
                   </div>
                   <span class="form-sub-label-container" style="vertical-align:top">
-                    <input type="text" class="form-textbox validate[required, limitDate, validateLiteDate]" id="lite_mode_71" size="12" data-maxlength="12" maxLength="12" data-age="" value="" required="" data-format="mmddyyyy" data-seperator="-" placeholder="MM-DD-YYYY" autoComplete="section-input_71 off" aria-labelledby="label_71 sublabel_71_litemode" />
-                    <img class=" newDefaultTheme-dateIcon icon-liteMode" alt="Pick a Date" id="input_71_pick" src="https://cdn.jotfor.ms/images/calendar.png" data-component="datetime" aria-hidden="true" data-allow-time="No" data-version="v2" />
+                    <input type="text" class="form-textbox validate[required, disallowPast, limitDate, validateLiteDate]" id="lite_mode_71" size="12" data-maxlength="12" maxLength="12" data-age="" value="" required="" data-format="mmddyyyy" data-seperator="/" placeholder="MM/DD/YYYY" autoComplete="section-input_71 off" aria-labelledby="label_71 sublabel_71_litemode" />
+                    <img class="showAutoCalendar newDefaultTheme-dateIcon icon-liteMode" alt="Pick a Date" id="input_71_pick" src="https://cdn.jotfor.ms/images/calendar.png" data-component="datetime" aria-hidden="true" data-allow-time="No" data-version="v2" />
                     <label class="form-sub-label" for="lite_mode_71" id="sublabel_71_litemode" style="min-height:13px" aria-hidden="false"> Date </label>
                   </span>
                 </div>
               </div>
             </li>
-            <li class="form-line form-line-column form-col-4" data-type="control_datetime" id="id_70">
+            <li class="form-line form-line-column form-col-4 always-hidden form-field-hidden" style="display:none;" data-type="control_datetime" id="id_70">
               <label class="form-label form-label-top form-label-auto" id="label_70" for="lite_mode_70"> Date of Return </label>
-              <div id="cid_70" class="form-input-wide" data-layout="half">
+              <div id="cid_70" class="form-input-wide always-hidden" data-layout="half">
                 <div data-wrapper-react="true">
                   <div style="display:none">
                     <span class="form-sub-label-container" style="vertical-align:top">
-                      <input type="tel" class="form-textbox validate[limitDate]" id="month_70" name="q70_dateOf70[month]" size="2" data-maxlength="2" data-age="" maxLength="2" value="" autoComplete="section-input_70 off" aria-labelledby="label_70 sublabel_70_month" />
+                      <input type="tel" class="form-textbox validate[disallowPast, limitDate]" id="month_70" name="q70_dateOf70[month]" size="2" data-maxlength="2" data-age="" maxLength="2" value="" autoComplete="section-input_70 off" aria-labelledby="label_70 sublabel_70_month" />
                       <span class="date-separate" aria-hidden="true">
-                         -
+                         /
                       </span>
                       <label class="form-sub-label" for="month_70" id="sublabel_70_month" style="min-height:13px" aria-hidden="false"> Month </label>
                     </span>
                     <span class="form-sub-label-container" style="vertical-align:top">
-                      <input type="tel" class="form-textbox validate[limitDate]" id="day_70" name="q70_dateOf70[day]" size="2" data-maxlength="2" data-age="" maxLength="2" value="" autoComplete="section-input_70 off" aria-labelledby="label_70 sublabel_70_day" />
+                      <input type="tel" class="form-textbox validate[disallowPast, limitDate]" id="day_70" name="q70_dateOf70[day]" size="2" data-maxlength="2" data-age="" maxLength="2" value="" autoComplete="section-input_70 off" aria-labelledby="label_70 sublabel_70_day" />
                       <span class="date-separate" aria-hidden="true">
-                         -
+                         /
                       </span>
                       <label class="form-sub-label" for="day_70" id="sublabel_70_day" style="min-height:13px" aria-hidden="false"> Day </label>
                     </span>
                     <span class="form-sub-label-container" style="vertical-align:top">
-                      <input type="tel" class="form-textbox validate[limitDate]" id="year_70" name="q70_dateOf70[year]" size="4" data-maxlength="4" data-age="" maxLength="4" value="" autoComplete="section-input_70 off" aria-labelledby="label_70 sublabel_70_year" />
+                      <input type="tel" class="form-textbox validate[disallowPast, limitDate]" id="year_70" name="q70_dateOf70[year]" size="4" data-maxlength="4" data-age="" maxLength="4" value="" autoComplete="section-input_70 off" aria-labelledby="label_70 sublabel_70_year" />
                       <label class="form-sub-label" for="year_70" id="sublabel_70_year" style="min-height:13px" aria-hidden="false"> Year </label>
                     </span>
                   </div>
                   <span class="form-sub-label-container" style="vertical-align:top">
-                    <input type="text" class="form-textbox validate[limitDate, validateLiteDate]" id="lite_mode_70" size="12" data-maxlength="12" maxLength="12" data-age="" value="" data-format="mmddyyyy" data-seperator="-" placeholder="MM-DD-YYYY" autoComplete="section-input_70 off" aria-labelledby="label_70 sublabel_70_litemode" />
-                    <img class=" newDefaultTheme-dateIcon icon-liteMode" alt="Pick a Date" id="input_70_pick" src="https://cdn.jotfor.ms/images/calendar.png" data-component="datetime" aria-hidden="true" data-allow-time="No" data-version="v2" />
+                    <input type="text" class="form-textbox validate[disallowPast, limitDate, validateLiteDate]" id="lite_mode_70" size="12" data-maxlength="12" maxLength="12" data-age="" value="" data-format="mmddyyyy" data-seperator="/" placeholder="MM/DD/YYYY" autoComplete="section-input_70 off" aria-labelledby="label_70 sublabel_70_litemode" />
+                    <img class="showAutoCalendar newDefaultTheme-dateIcon icon-liteMode" alt="Pick a Date" id="input_70_pick" src="https://cdn.jotfor.ms/images/calendar.png" data-component="datetime" aria-hidden="true" data-allow-time="No" data-version="v2" />
                     <label class="form-sub-label" for="lite_mode_70" id="sublabel_70_litemode" style="min-height:13px" aria-hidden="false"> Date </label>
                   </span>
                 </div>
               </div>
-            </li>            
+            </li>
             <li class="form-line jf-required" data-type="control_dropdown" id="id_52">
-              <label class="form-label form-label-left form-label-auto" id="label_52" for="input_52">
+              <label class="form-label form-label-top form-label-auto" id="label_52" for="input_52">
                 Number of Passengers
                 <span class="form-required">
                   *
                 </span>
               </label>
-              <div id="cid_52" class="form-input jf-required" data-layout="half">
+              <div id="cid_52" class="form-input-wide jf-required" data-layout="half">
                 <span class="form-sub-label-container" style="vertical-align:top">
                   <select class="form-dropdown validate[required]" id="input_52" name="q52_numberOf" style="width:310px" data-component="dropdown" required="">
                     <option value=""> Please Select </option>
@@ -246,28 +247,28 @@
               </div>
             </li>
           </ul>
-          <ul class="form-section-closed" style="height: 84px;clear:both;" id="section_35">
+          <ul class="form-section" id="section_35" style="display:none;">
             <li id="cid_35" class="form-input-wide" data-type="control_collapse">
               <div class="form-collapse-table" id="collapse_35" data-component="collapse">
                 <span class="form-collapse-mid" id="collapse-text_35">
                   Passenger 1
                 </span>
-                <span class="form-collapse-right form-collapse-right-hide">
+                <span class="form-collapse-right form-collapse-right-show">
                    
                 </span>
               </div>
             </li>
             <li class="form-line jf-required" data-type="control_fullname" id="id_3" data-compound-hint=",">
-              <label class="form-label form-label-left form-label-auto" id="label_3" for="first_3">
+              <label class="form-label form-label-top form-label-auto" id="label_3" for="first_3">
                 Full Name
                 <span class="form-required">
                   *
                 </span>
               </label>
-              <div id="cid_3" class="form-input jf-required" data-layout="full">
+              <div id="cid_3" class="form-input-wide jf-required" data-layout="full">
                 <div data-wrapper-react="true">
                   <span class="form-sub-label-container" style="vertical-align:top" data-input-type="first">
-                    <input type="text" id="first_3" minlength="5" name="q3_form_fullname[first]" class="form-textbox validate[required]" data-defaultvalue="" autoComplete="section-input_3 given-name" size="15" value="" data-component="first" aria-labelledby="label_3 sublabel_3_first" required="" />
+                    <input type="text" id="first_3" name="q3_form_fullname[first]" class="form-textbox validate[required]" data-defaultvalue="" autoComplete="section-input_3 given-name" size="10" value="" data-component="first" aria-labelledby="label_3 sublabel_3_first" required="" />
                     <label class="form-sub-label" for="first_3" id="sublabel_3_first" style="min-height:13px" aria-hidden="false"> First Name </label>
                   </span>
                   <span class="form-sub-label-container" style="vertical-align:top" data-input-type="last">
@@ -315,13 +316,13 @@
               </div>
             </li>
             <li class="form-line jf-required" data-type="control_phone" id="id_5">
-              <label class="form-label form-label-left form-label-auto" id="label_5" for="input_5_full">
+              <label class="form-label form-label-top form-label-auto" id="label_5" for="input_5_full">
                 Phone Number
                 <span class="form-required">
                   *
                 </span>
               </label>
-              <div id="cid_5" class="form-input jf-required" data-layout="half">
+              <div id="cid_5" class="form-input-wide jf-required" data-layout="half">
                 <span class="form-sub-label-container" style="vertical-align:top">
                   <input type="tel" id="input_5_full" name="q5_phoneNumber5[full]" data-type="mask-number" class="mask-phone-number form-textbox validate[required, Fill Mask]" data-defaultvalue="" autoComplete="section-input_5 tel-national" style="width:310px" data-masked="true" value="" placeholder="(000) 000-0000" data-component="phone" aria-labelledby="label_5" required="" />
                   <label class="form-sub-label is-empty" for="input_5_full" id="sublabel_5_masked" style="min-height:13px" aria-hidden="false">  </label>
@@ -329,13 +330,13 @@
               </div>
             </li>
             <li class="form-line jf-required" data-type="control_email" id="id_6">
-              <label class="form-label form-label-left form-label-auto" id="label_6" for="input_6">
+              <label class="form-label form-label-top form-label-auto" id="label_6" for="input_6">
                 E-mail
                 <span class="form-required">
                   *
                 </span>
               </label>
-              <div id="cid_6" class="form-input jf-required" data-layout="half">
+              <div id="cid_6" class="form-input-wide jf-required" data-layout="half">
                 <span class="form-sub-label-container" style="vertical-align:top">
                   <input type="email" id="input_6" name="q6_email6" class="form-textbox validate[required, Email]" data-defaultvalue="" style="width:310px" size="310" value="" placeholder="ex: email@yahoo.com" data-component="email" aria-labelledby="label_6 sublabel_input_6" required="" />
                   <label class="form-sub-label" for="input_6" id="sublabel_input_6" style="min-height:13px" aria-hidden="false"> example@example.com </label>
@@ -343,8 +344,8 @@
               </div>
             </li>
             <li class="form-line" data-type="control_address" id="id_4">
-              <label class="form-label form-label-left form-label-auto" id="label_4" for="input_4_addr_line1"> Address </label>
-              <div id="cid_4" class="form-input" data-layout="full">
+              <label class="form-label form-label-top form-label-auto" id="label_4" for="input_4_addr_line1"> Address </label>
+              <div id="cid_4" class="form-input-wide" data-layout="full">
                 <div summary="" class="form-address-table jsTest-addressField">
                   <div class="form-address-line-wrapper jsTest-address-line-wrapperField">
                     <span class="form-address-line form-address-street-line jsTest-address-lineField">
@@ -406,8 +407,8 @@
               </div>
             </li>
             <li class="form-line" data-type="control_fullname" id="id_44" data-compound-hint=",">
-              <label class="form-label form-label-left form-label-auto" id="label_44" for="first_44"> Full Name </label>
-              <div id="cid_44" class="form-input" data-layout="full">
+              <label class="form-label form-label-top form-label-auto" id="label_44" for="first_44"> Full Name </label>
+              <div id="cid_44" class="form-input-wide" data-layout="full">
                 <div data-wrapper-react="true">
                   <span class="form-sub-label-container" style="vertical-align:top" data-input-type="first">
                     <input type="text" id="first_44" name="q44_fullName[first]" class="form-textbox" data-defaultvalue="" autoComplete="section-input_44 given-name" size="10" value="" data-component="first" aria-labelledby="label_44 sublabel_44_first" />
@@ -453,8 +454,8 @@
               </div>
             </li>
             <li class="form-line" data-type="control_phone" id="id_47">
-              <label class="form-label form-label-left form-label-auto" id="label_47" for="input_47_full"> Phone Number </label>
-              <div id="cid_47" class="form-input" data-layout="half">
+              <label class="form-label form-label-top form-label-auto" id="label_47" for="input_47_full"> Phone Number </label>
+              <div id="cid_47" class="form-input-wide" data-layout="half">
                 <span class="form-sub-label-container" style="vertical-align:top">
                   <input type="tel" id="input_47_full" name="q47_phoneNumber[full]" data-type="mask-number" class="mask-phone-number form-textbox validate[Fill Mask]" data-defaultvalue="" autoComplete="section-input_47 tel-national" style="width:310px" data-masked="true" value="" placeholder="(000) 000-0000" data-component="phone" aria-labelledby="label_47" />
                   <label class="form-sub-label is-empty" for="input_47_full" id="sublabel_47_masked" style="min-height:13px" aria-hidden="false">  </label>
@@ -462,8 +463,8 @@
               </div>
             </li>
             <li class="form-line" data-type="control_email" id="id_48">
-              <label class="form-label form-label-left form-label-auto" id="label_48" for="input_48"> E-mail </label>
-              <div id="cid_48" class="form-input" data-layout="half">
+              <label class="form-label form-label-top form-label-auto" id="label_48" for="input_48"> E-mail </label>
+              <div id="cid_48" class="form-input-wide" data-layout="half">
                 <span class="form-sub-label-container" style="vertical-align:top">
                   <input type="email" id="input_48" name="q48_email" class="form-textbox validate[Email]" data-defaultvalue="" style="width:310px" size="310" value="" placeholder="ex: email@yahoo.com" data-component="email" aria-labelledby="label_48 sublabel_input_48" />
                   <label class="form-sub-label" for="input_48" id="sublabel_input_48" style="min-height:13px" aria-hidden="false"> example@example.com </label>
@@ -471,8 +472,8 @@
               </div>
             </li>
             <li class="form-line" data-type="control_address" id="id_49">
-              <label class="form-label form-label-left form-label-auto" id="label_49" for="input_49_addr_line1"> Address </label>
-              <div id="cid_49" class="form-input" data-layout="full">
+              <label class="form-label form-label-top form-label-auto" id="label_49" for="input_49_addr_line1"> Address </label>
+              <div id="cid_49" class="form-input-wide" data-layout="full">
                 <div summary="" class="form-address-table jsTest-addressField">
                   <div class="form-address-line-wrapper jsTest-address-line-wrapperField">
                     <span class="form-address-line form-address-street-line jsTest-address-lineField">
@@ -534,8 +535,8 @@
               </div>
             </li>
             <li class="form-line" data-type="control_fullname" id="id_55" data-compound-hint=",">
-              <label class="form-label form-label-left form-label-auto" id="label_55" for="first_55"> Full Name </label>
-              <div id="cid_55" class="form-input" data-layout="full">
+              <label class="form-label form-label-top form-label-auto" id="label_55" for="first_55"> Full Name </label>
+              <div id="cid_55" class="form-input-wide" data-layout="full">
                 <div data-wrapper-react="true">
                   <span class="form-sub-label-container" style="vertical-align:top" data-input-type="first">
                     <input type="text" id="first_55" name="q55_fullName55[first]" class="form-textbox" data-defaultvalue="" autoComplete="section-input_55 given-name" size="10" value="" data-component="first" aria-labelledby="label_55 sublabel_55_first" />
@@ -581,8 +582,8 @@
               </div>
             </li>
             <li class="form-line" data-type="control_phone" id="id_58">
-              <label class="form-label form-label-left form-label-auto" id="label_58" for="input_58_full"> Phone Number </label>
-              <div id="cid_58" class="form-input" data-layout="half">
+              <label class="form-label form-label-top form-label-auto" id="label_58" for="input_58_full"> Phone Number </label>
+              <div id="cid_58" class="form-input-wide" data-layout="half">
                 <span class="form-sub-label-container" style="vertical-align:top">
                   <input type="tel" id="input_58_full" name="q58_phoneNumber58[full]" data-type="mask-number" class="mask-phone-number form-textbox validate[Fill Mask]" data-defaultvalue="" autoComplete="section-input_58 tel-national" style="width:310px" data-masked="true" value="" placeholder="(000) 000-0000" data-component="phone" aria-labelledby="label_58" />
                   <label class="form-sub-label is-empty" for="input_58_full" id="sublabel_58_masked" style="min-height:13px" aria-hidden="false">  </label>
@@ -590,8 +591,8 @@
               </div>
             </li>
             <li class="form-line" data-type="control_email" id="id_59">
-              <label class="form-label form-label-left form-label-auto" id="label_59" for="input_59"> E-mail </label>
-              <div id="cid_59" class="form-input" data-layout="half">
+              <label class="form-label form-label-top form-label-auto" id="label_59" for="input_59"> E-mail </label>
+              <div id="cid_59" class="form-input-wide" data-layout="half">
                 <span class="form-sub-label-container" style="vertical-align:top">
                   <input type="email" id="input_59" name="q59_email59" class="form-textbox validate[Email]" data-defaultvalue="" style="width:310px" size="310" value="" placeholder="ex: email@yahoo.com" data-component="email" aria-labelledby="label_59 sublabel_input_59" />
                   <label class="form-sub-label" for="input_59" id="sublabel_input_59" style="min-height:13px" aria-hidden="false"> example@example.com </label>
@@ -599,8 +600,8 @@
               </div>
             </li>
             <li class="form-line" data-type="control_address" id="id_60">
-              <label class="form-label form-label-left form-label-auto" id="label_60" for="input_60_addr_line1"> Address </label>
-              <div id="cid_60" class="form-input" data-layout="full">
+              <label class="form-label form-label-top form-label-auto" id="label_60" for="input_60_addr_line1"> Address </label>
+              <div id="cid_60" class="form-input-wide" data-layout="full">
                 <div summary="" class="form-address-table jsTest-addressField">
                   <div class="form-address-line-wrapper jsTest-address-line-wrapperField">
                     <span class="form-address-line form-address-street-line jsTest-address-lineField">
@@ -662,8 +663,8 @@
               </div>
             </li>
             <li class="form-line" data-type="control_fullname" id="id_63" data-compound-hint=",">
-              <label class="form-label form-label-left form-label-auto" id="label_63" for="first_63"> Full Name </label>
-              <div id="cid_63" class="form-input" data-layout="full">
+              <label class="form-label form-label-top form-label-auto" id="label_63" for="first_63"> Full Name </label>
+              <div id="cid_63" class="form-input-wide" data-layout="full">
                 <div data-wrapper-react="true">
                   <span class="form-sub-label-container" style="vertical-align:top" data-input-type="first">
                     <input type="text" id="first_63" name="q63_fullName63[first]" class="form-textbox" data-defaultvalue="" autoComplete="section-input_63 given-name" size="10" value="" data-component="first" aria-labelledby="label_63 sublabel_63_first" />
@@ -709,8 +710,8 @@
               </div>
             </li>
             <li class="form-line" data-type="control_phone" id="id_66">
-              <label class="form-label form-label-left form-label-auto" id="label_66" for="input_66_full"> Phone Number </label>
-              <div id="cid_66" class="form-input" data-layout="half">
+              <label class="form-label form-label-top form-label-auto" id="label_66" for="input_66_full"> Phone Number </label>
+              <div id="cid_66" class="form-input-wide" data-layout="half">
                 <span class="form-sub-label-container" style="vertical-align:top">
                   <input type="tel" id="input_66_full" name="q66_phoneNumber66[full]" data-type="mask-number" class="mask-phone-number form-textbox validate[Fill Mask]" data-defaultvalue="" autoComplete="section-input_66 tel-national" style="width:310px" data-masked="true" value="" placeholder="(000) 000-0000" data-component="phone" aria-labelledby="label_66" />
                   <label class="form-sub-label is-empty" for="input_66_full" id="sublabel_66_masked" style="min-height:13px" aria-hidden="false">  </label>
@@ -718,8 +719,8 @@
               </div>
             </li>
             <li class="form-line" data-type="control_email" id="id_67">
-              <label class="form-label form-label-left form-label-auto" id="label_67" for="input_67"> E-mail </label>
-              <div id="cid_67" class="form-input" data-layout="half">
+              <label class="form-label form-label-top form-label-auto" id="label_67" for="input_67"> E-mail </label>
+              <div id="cid_67" class="form-input-wide" data-layout="half">
                 <span class="form-sub-label-container" style="vertical-align:top">
                   <input type="email" id="input_67" name="q67_email67" class="form-textbox validate[Email]" data-defaultvalue="" style="width:310px" size="310" value="" placeholder="ex: email@yahoo.com" data-component="email" aria-labelledby="label_67 sublabel_input_67" />
                   <label class="form-sub-label" for="input_67" id="sublabel_input_67" style="min-height:13px" aria-hidden="false"> example@example.com </label>
@@ -727,8 +728,8 @@
               </div>
             </li>
             <li class="form-line" data-type="control_address" id="id_68">
-              <label class="form-label form-label-left form-label-auto" id="label_68" for="input_68_addr_line1"> Address </label>
-              <div id="cid_68" class="form-input" data-layout="full">
+              <label class="form-label form-label-top form-label-auto" id="label_68" for="input_68_addr_line1"> Address </label>
+              <div id="cid_68" class="form-input-wide" data-layout="full">
                 <div summary="" class="form-address-table jsTest-addressField">
                   <div class="form-address-line-wrapper jsTest-address-line-wrapperField">
                     <span class="form-address-line form-address-street-line jsTest-address-lineField">
@@ -778,24 +779,21 @@
                 </div>
               </div>
             </li>
-          </ul>
-          <li class="form-line" data-type="control_button" id="id_2">
-            <div id="cid_2" class="form-input-wide" data-layout="full">
-              <div data-align="left" class="form-buttons-wrapper form-buttons-left   jsTest-button-wrapperField">
-                <button id="input_2" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField" data-component="button" data-content="">
-                  Submit
-                </button>
+            <li class="form-line" data-type="control_button" id="id_2">
+              <div id="cid_2" class="form-input-wide" data-layout="full">
+                <div data-align="left" class="form-buttons-wrapper form-buttons-left   jsTest-button-wrapperField">
+                  <button id="input_2" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField" data-component="button" data-content="">
+                    Submit
+                  </button>
+                </div>
               </div>
-            </div>
-          </li>
-          <li style="clear:both">
-          </li>
-          <li style="display:none">
-            Should be Empty:
-            <input type="text" name="website" value="" />
-          </li>
-      </div>
-    
+            </li>
+            <li style="display:none">
+              Should be Empty:
+              <input type="text" name="website" value="" />
+            </li>
+          </ul>
+      </div> 
 
     <!-- END TICKET BOOKER -->
 	<!-- Footer or something -->
