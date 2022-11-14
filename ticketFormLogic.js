@@ -21,7 +21,6 @@ function formSubmission() {
         } else {
             console.log("Return Date Found");
         }
-
     }
 
     if(nameChecker()) {
