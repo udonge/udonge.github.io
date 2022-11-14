@@ -3,14 +3,48 @@
 const formID= "223167131992861";
 
 function formSubmission() {
+
+    if(document.forms[formID]["input_28"].value.length==0) {
+        alert("Select Origin");
+        return false;
+    }
+
+    if(document.forms[formID]["input_29"].value.length==0) {
+        alert("Select Destination");
+        return false;
+    }
+
+    if(document.forms[formID]["input_69_1"].checked) {
+        if(document.forms[formID]["lite_mode_71"].value.length==0) {
+            alert("Checking for Return Date");
+            return false;
+        } else {
+            console.log("Return Date Found");
+        }
+
+    }
+
+    if(nameChecker()) {
+        console.log("Name(s) valid.");
+    } else {
+        alert("First name minimum character length: 5.");
+    }
+
+
+    
+
+   
+} // End formSubmission()
+
+function nameChecker() {
     let x = document.forms[formID]["input_52"].value;
-    console.log(x);
     switch(x) {
         case "1": {
             if(validateName(formID, "first_3")) {
                 alert("Valid");
             } else {
                 alert("Invalid.");
+                return false;
             }
             break;
         }
@@ -19,6 +53,7 @@ function formSubmission() {
                 alert("Valid");
             } else {
                 alert("Invalid.");
+                return false;
             }
             break;            
         }
@@ -27,6 +62,7 @@ function formSubmission() {
                 alert("Valid");
             } else {
                 alert("Invalid.");
+                return false;
             }
             break;                 
         }
@@ -35,20 +71,16 @@ function formSubmission() {
                 alert("Valid");
             } else {
                 alert("Invalid.");
+                return false;
             }
             break;               
         }
         default:
             console.log("Huh.");
-            return false;
-
+            break;
     } //Case End.
-
-    
-
-   
-    } // End formSubmission()
-
+    return true;    
+} //End nameChecker()
 
 function validateName(form, field) {
     let x = document.forms[form][field].value;
